@@ -1,0 +1,27 @@
+body{
+    background-color: brown;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.free{
+    position:absolute;
+    top: 200px;
+    right: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+.pong{
+    position:absolute;
+    top: 200px;
+    left: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+img{
+    max-width: 500px;
+    max-height: 200px;
+}
