@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 body{
     font-family: 'Roboto Slab', serif;
-    background: linear-gradient(to bottom, #a52a2a, #ff0000);
-    height: 958px;
-    
+    height: 925px;
+    background: linear-gradient(to bottom, #421717, #ff0000);
 }
 :root{
     --gradient: 
@@ -12,6 +11,15 @@ body{
         #ffff,
         #C9C9C9,
         #898989
+    )
+}
+:root{
+    --gradient2: 
+        linear-gradient(
+        to right,
+        #898989,
+        #C9C9C9,
+        #ffff
     )
 }
 h1{
@@ -27,11 +35,27 @@ h1{
     -webkit-background-clip: text;
     color: transparent;
 }
+h1:hover{
+    color: black;
+    background-image: var(--gradient2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 h2{
     position: absolute;
     top: 40px;
     right: 705px;
     background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h2:hover{
+    position: absolute;
+    top: 40px;
+    right: 705px;
+    background-image: var(--gradient2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -47,6 +71,12 @@ h2{
     -webkit-background-clip: text;
     color: transparent;
 }
+.free:hover{
+    background-image: var(--gradient2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 .pong{
     position:absolute;
     top: 200px;
@@ -54,6 +84,12 @@ h2{
     font-size: 30px;
     text-align: center;
     background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.pong:hover{
+    background-image: var(--gradient2);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
