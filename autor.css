@@ -5,62 +5,80 @@
     font-family: 'Roboto Slab', serif;
 }
 body{
-    height: 100vh;
+    height: 300vh;
     background: linear-gradient(to bottom, #421717, #ff0000);
 }
 
-:root{
-    --gradient: 
-        linear-gradient(
-        to right,
-        #ffff,
-        #C9C9C9,
-        #898989
-    )
-}
-:root{
-    --gradient2: 
-        linear-gradient(
-        to right,
-        #898989,
-        #C9C9C9,
-        #ffff
-    )
+.voltar{
+    max-width: 80px;
+    max-height: 80px;
 }
 
-h1{
-    width: 300px;
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header.rolagem{
+    background-color: #421717;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #ff0000;
+}
+
+header i{
     font-size: 30px;
-    height: 40px;
-    position: absolute;
-    top: 50px;
-    right: 800px;
-    color: black;
-    background-image: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #ff0000;
 }
 
-h1:hover{
-    background-image: var(--gradient2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+header ul{
+    list-style-type: none;
 }
 
-h2{
-    position: absolute;
-    top: 80px;
-    right: 625px;
-    background-image: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
 }
-h2:hover{
-    background-image: var(--gradient2);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+
+header ul li a{
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.banner{
+    height: 150vh;
+    background-image: url(imagensAutor/port.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 4em;
+    color:#421717;
+}
+
+.banner h1 span{
+    color: #ff0000;
 }
