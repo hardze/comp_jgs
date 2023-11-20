@@ -132,17 +132,21 @@ a{
 .autor p{
     font-size: 25px;
     position: absolute;
-    top: 20px;
-    right: 5px;
+    top: 65.5px;
+    left: 0px;
     color: #ffff;
 }
 .autor .imagem{
+    position: absolute;
+    top: 0px;
     max-height: 75px;
     max-width: 75px;
     transition: .3s;
     border-radius: 15px;
 }
 .autor .imagem:hover{
+    position: absolute;
+    top: 0px;
     max-width: 95px;
     max-height: 95px;
     border-radius: 15px;
