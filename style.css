@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-body{
+*{
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto Slab', serif;
-    height: 925px;
+}
+body{
+    height: 100vh;
     background: linear-gradient(to bottom, #421717, #ff0000);
 }
+
 :root{
     --gradient: 
         linear-gradient(
@@ -27,7 +32,7 @@ h1{
     font-size: 30px;
     height: 40px;
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 860px;
     color: black;
     background-image: var(--gradient);
@@ -36,7 +41,6 @@ h1{
     color: transparent;
 }
 h1:hover{
-    color: black;
     background-image: var(--gradient2);
     background-clip: text;
     -webkit-background-clip: text;
@@ -44,7 +48,7 @@ h1:hover{
 }
 h2{
     position: absolute;
-    top: 40px;
+    top: 80px;
     right: 705px;
     background-image: var(--gradient);
     background-clip: text;
@@ -52,9 +56,6 @@ h2{
     color: transparent;
 }
 h2:hover{
-    position: absolute;
-    top: 40px;
-    right: 705px;
     background-image: var(--gradient2);
     background-clip: text;
     -webkit-background-clip: text;
@@ -62,14 +63,15 @@ h2:hover{
 }
 .free{
     position:absolute;
-    top: 200px;
-    right: 250px;
+    top: 350px;
+    right: 150px;
     font-size: 30px;
     text-align: center;
     background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    transition: .5s;
 }
 .free:hover{
     background-image: var(--gradient2);
@@ -79,16 +81,35 @@ h2:hover{
 }
 .pong{
     position:absolute;
-    top: 200px;
-    left: 250px;
+    top: 350px;
+    left: 150px;
     font-size: 30px;
     text-align: center;
     background-image: var(--gradient);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    transition: .5s;
 }
 .pong:hover{
+    background-image: var(--gradient2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.relogio{
+    position:absolute;
+    top: 350px;
+    left: 730px;
+    font-size: 30px;
+    text-align: center;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: .5s;
+}
+.relogio:hover{
     background-image: var(--gradient2);
     background-clip: text;
     -webkit-background-clip: text;
@@ -97,4 +118,32 @@ h2:hover{
 img{
     max-width: 500px;
     max-height: 200px;
+}
+a{
+    text-decoration: none;
+}
+.autor{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    height: 150px;
+    width: 150px;
+}
+.autor p{
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    color: #ffff;
+}
+.autor .imagem{
+    max-height: 75px;
+    max-width: 75px;
+    transition: .3s;
+    border-radius: 15px;
+}
+.autor .imagem:hover{
+    max-width: 95px;
+    max-height: 95px;
+    border-radius: 15px;
 }
